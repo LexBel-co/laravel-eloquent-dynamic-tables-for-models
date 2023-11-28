@@ -1,0 +1,28 @@
+{
+    "name":"lexbelcode/laravel-eloquent-dynamic-tables-for-models",
+    "license":"MIT",
+    "description": "A simple but effective way to set the table of a model at runtime and continue using Eloquent instead of QueryBuilder",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Alex Beltrán",
+            "email": "vectorna@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "lexbelcode\\LaravelEloquentDynamicTablesForModels\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "lexbelcode\\LaravelEloquentDynamicTablesForModels\\LaravelEloquentDynamicServiceProvider"
+            ]
+        }
+    }
+}
